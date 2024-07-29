@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import AppContext from "../../../../Provider/Context";
+import TopSection from "../../../../Components/TopSection/TopSection";
 
 function DashPage() {
   const { user, setUser, width } = useContext(AppContext);
@@ -9,6 +10,7 @@ function DashPage() {
   return (
     <div className="w-full h-full text-basered mt-10">
       {/* <div className="w-fit h-auto">this is the DashPage</div> */}
+      <TopSection />
       <p className="">and the user is: {user}</p>
       <p className="">page width is: {width} px</p>
     </div>
