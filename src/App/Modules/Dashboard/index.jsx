@@ -3,7 +3,7 @@ import TopBar from "../../Components/TopBar/TopBar";
 
 function Dashboard() {
   return (
-    <div className="w-full h-full bg-black text-red">
+    <div className="w-full min-h-screen bg-black font-akira italic">
       <TopBar />
       <Outlet />
     </div>
