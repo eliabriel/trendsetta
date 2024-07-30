@@ -19,7 +19,7 @@ function TopBar() {
   };
 
   return (
-    <div className=" border-y-4 border-basered text-basered flex items-center justify-between p-3">
+    <div className=" w-full border-y-4 border-basered text-basered flex items-center justify-between p-3">
       <div className="xxs:ml-3 md:ml-10">
         <Logo />
       </div>
