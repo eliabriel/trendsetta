@@ -4,7 +4,7 @@ function Logo() {
   return (
     <div className="w-fit h-fit">
       <div className=" w-fit h-fit">
-        <img src={logo} alt="Logo" className="w-20 h-10" />
+        <img src={logo} alt="Logo" className="w-20" />
       </div>
     </div>
   );

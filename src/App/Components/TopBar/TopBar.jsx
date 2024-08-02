@@ -25,7 +25,7 @@ function TopBar() {
       </div>
       <div className="">
         <button
-          className=" focus:outline-none md:hidden flex"
+          className=" focus:outline-none md:hidden flex "
           onClick={toggleMenu}
         >
           {/* <IoMenu size={40} /> */}
@@ -41,7 +41,7 @@ function TopBar() {
         }
         </button>
         {isOpen && (
-          <div className="absolute top-16 right-0 w-1/2 h-fit bg-baseyellow border-4 border-basered shadow-sm shadow-baseyellow">
+          <div className="absolute z-[1] top-16 right-0 w-1/2 h-fit bg-baseyellow border-4 border-basered shadow-sm shadow-baseyellow">
             <NavRSMenu />
           </div>
         )}
