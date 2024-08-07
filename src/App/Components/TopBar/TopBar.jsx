@@ -5,6 +5,7 @@ import { useContext, useState } from "react";
 import NavButton from "../Buttons/NavButton";
 import NavRSMenu from "../MenuList/NavRSMenu";
 import { GiCrossMark } from "react-icons/gi";
+import { RiShoppingCartFill } from "react-icons/ri";
 
 function TopBar() {
   const { width } = useContext(AppContext);
@@ -19,16 +20,17 @@ function TopBar() {
   };
 
   return (
-    <div className=" w-full border-y-4 border-basered text-basered flex items-center justify-between p-3">
-      <div className="xxs:ml-3 md:ml-10">
+    <div className=" w-full border-t-4 border-baselightred text-baselightred flex items-center justify-between p-3">
+      <div className="xxs:ml-3 m:ml-10">
         <Logo />
       </div>
-      <div className="">
+      <div className="flex items-center space-x-3">
+        <div><RiShoppingCartFill size={25} /></div>
         <button
-          className=" focus:outline-none md:hidden flex "
+          className=" focus:outline-none m:hidden flex "
           onClick={toggleMenu}
         >
-          {/* <IoMenu size={40} /> */}
+          
           {isOpen ? (
             <div className="flex items-center justify-center">
             <GiCrossMark size={40} />
@@ -46,7 +48,7 @@ function TopBar() {
           </div>
         )}
       </div>
-      <div className="xxs:hidden md:flex mr-10">
+      <div className="xxs:hidden m:flex mr-10">
         <NavRSMenu />
       </div>
     </div>
